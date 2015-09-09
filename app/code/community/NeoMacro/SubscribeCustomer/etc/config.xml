@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <events>
+            <customer_save_after>
+                <observers>
+                    <neomacro_subscribe_customer>
+                        <class>NeoMacro_SubscribeCustomer_Model_Observer</class>
+                        <method>subscribe</method>
+                        <type>singleton</type>
+                    </neomacro_subscribe_customer>
+                </observers>
+            </customer_save_after>
+        </events>
+    </global>
+    <modules>
+        <NeoMacro_SubscribeCustomer>
+            <version>0.0.1</version>
+        </NeoMacro_SubscribeCustomer>
+    </modules>
+</config>
